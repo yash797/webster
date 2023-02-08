@@ -1,11 +1,24 @@
 import './App.css';
-import Price from './demo'
+import { Route, BrowserRouter, Routes} from "react-router-dom";
+import Home from "./home";
+
+import Login from './login'
+import Demo from "./demo";
+
 
 function App() {
   return (
-    <div>
-    <Price/>
-    </div>
+    <>
+      {/* <Login /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/login" element={<Login />} />
+
+        {/* </Route> */}
+      </Routes>
+    </>
   );
 }
 
