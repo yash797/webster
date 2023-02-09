@@ -6,6 +6,8 @@ import Login from './pages/login'
 import Demo from "./pages/demo";
 import MyModal from './pages/MyModal';
 import Preloader from './components/preloader/Preloader';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       {/* <Login /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
 
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
