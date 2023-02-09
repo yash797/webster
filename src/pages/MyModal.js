@@ -27,16 +27,16 @@ const MyModal = () => {
 
   const questions = [
     {
-      image: CRIMINAL_RIDDLES_1,
-      question: 'Qn statement 1',
-      answer: '11',
-      quote: 'There is nothing more deceptive than an obvious fact.'
+      image: CRIMINAL_RIDDLES_2,
+      question: '',
+      answer: 'A',
+      quote: 'Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell'
     },
     {
-      image: CRIMINAL_RIDDLES_2,
-      question: 'Qn statement 2',
-      answer: '22',
-      quote: 'Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell'
+      image: CRIMINAL_RIDDLES_1,
+      question: 'Decrypt the message',
+      answer: '11',
+      quote: 'John and Robert will be the next I am not afraid'
     },
     {
       image: '',
@@ -251,13 +251,13 @@ const MyModal = () => {
                     </svg>
                 </div> */}
           {questions[questionIndex].image.length > 0 ? <img src={questions[questionIndex].image} alt="img" /> : <></> }
-          <p className="text-2xl my-4">Who'se the culprit ?</p>
+          <p className="text-2xl my-4">Who's the culprit ?</p>
           <p className="text-2xl my-4">{questions[questionIndex].question}</p>
           <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/3">
               <label className="text-2xl block text-white-200 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="inline-full-name">
                 Answer :
-              </label>
+              </label>                                  
             </div>
             <div className="md:w-2/3">
               <input className="bg-grey-200 appearance-none border-2 border-red-500 rounded w-full py-2 px-4 text-white-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="inline-full-name" type="text" placeholder="Enter answer here" value={ans} onChange={onChangeAns} />
