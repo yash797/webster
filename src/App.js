@@ -9,6 +9,7 @@ import MyModal from './pages/MyModal';
 import Preloader from './components/preloader/Preloader';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/apply" element={<MyModal />} />
+        <Route path="/profile" element={<Profile />} />
         {/* <Route path="/Preloader" element={<Preloader />} /> */}
 
         {/* </Route> */}
