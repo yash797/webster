@@ -82,6 +82,36 @@ const LoginPage = () => {
             />
           </div>
         </div>
+        <div className="flex mb-4">
+          <div className="w-full mr-2 md:w-1/2">
+            <label className="block text-white font-medium mb-2" htmlFor="name">
+              Mail I'd:
+            </label>
+            <input
+              className="border border-gray-400 bg-gray-300 p-2 w-full"
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="md:w-1/2 ml-2 w-full">
+            <label className="block text-white font-medium mb-2" htmlFor="age">
+              Phone Number:
+            </label>
+            <input
+              className="border border-gray-400 bg-gray-300 p-2 w-full"
+              type="number"
+              id="age"
+              name="age"
+              value={formData.age}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+        </div>
         <div className="">
           <label
             className="block text-white font-medium mb-2"

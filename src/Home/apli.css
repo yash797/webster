@@ -86,85 +86,104 @@
 
 .c1 {
     /* background-color: rgb(251, 133, 7); */
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c1:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c2 {
     /* background-color: rgb(251, 247, 7); */
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c2:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c3 {
     /* background-color: rgb(111, 255, 1); */
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c3:hover {
-    background-color: rgb(14 165 233);
+    background-color: rgb(233, 47, 14);
 }
 
 .c4 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c4:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c5 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c5:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c6 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c6:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c7 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c7:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c8 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c8:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c9 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c9:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .c10 {
-    background-color: rgb(15 23 42);
+    /* background-color: rgb(15 23 42); */
+    background-color: rgb(42, 15, 15);
 }
 
 .c10:hover {
-    background-color: rgb(14 165 233);
+    /* background-color: rgb(14 165 233); */
+    background-color: rgb(233, 47, 14);
 }
 
 .main-wp {
@@ -250,7 +269,7 @@
     height: 60px;
     background: transparent;
     /* border:6px solid rgba(255,255,255,0.8); */
-    border: 6px solid rgb(9, 109, 249);
+    border: 6px solid rgb(249, 53, 9);
 }
 
 .elements div:nth-child(1) {
