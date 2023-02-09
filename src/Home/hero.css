@@ -16,7 +16,8 @@
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 175px;
-    color: rgb(93, 0, 255);
+    text-shadow: 2px 2px 8px #000000;
+    color: rgb(240, 136, 9);
 }
 
 
@@ -117,7 +118,7 @@
     color: #fff;
     font-weight: 700;
     font-size: 25px;
-    background-color: rgba(8, 88, 122, 0.349);
+    background-color: rgba(122, 44, 8, 0.349);
     /* padding: 17px 60px; */
     margin: 60px auto;
     margin-top: 40px;
@@ -138,7 +139,7 @@
     top: 0;
     height: 490%;
     width: 140%;
-    background: #07d4ef;
+    background: #ef3107;
     /* background: #ef3907; */
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -150,3 +151,12 @@
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+
+
+/* .ypcsbnew{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+} */
+
