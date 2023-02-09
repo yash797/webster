@@ -6,7 +6,7 @@ import "./background.css";
 function Hero() {
   return (
     <div className="main">
-        {/* <div className="hero1">
+      {/* <div className="hero1">
         <div className="xyz">
           <div className="drop"></div>
           <div className="wave"></div>
@@ -36,7 +36,7 @@ function Hero() {
       {/* </div> */}
       <div className="register">
         <button className="btn rounded">
-          <a href="/apply">
+          <a href="/sign-in">
             <span className="btn-span">Click to Apply</span>
           </a>
         </button>
