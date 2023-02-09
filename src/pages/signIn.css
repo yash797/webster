@@ -8,8 +8,12 @@
 .login-box{
     background-image: url("../static/images/magnifying-glass.png");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-color: crimson;
+    background-position: center 25%;
+    background-color: #B73F41;
+    /* opacity: 0.8; */
+    /* background-size: 50% 50%; */
+    /* aspect-ratio: 1 / 1;
+    background-size: 30%; */
     /* color: black; */
     /* clip-path: circle(110vh at 50% -10vh); */
 }

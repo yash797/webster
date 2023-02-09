@@ -2,9 +2,9 @@ import React from 'react';
 import("./signIn.css");
 
 const SignUp = () => {
-  return (
-    // <div>
-        
+    return (
+        // <div>
+
         <div className='flex items-center justify-center min-w-screen min-h-screen p-10 bg-black-500 text-white text-center overflow-hidden'>
             <div className="relative w-full h-full max-w-md md:h-auto">
                 {/* <div className="relative bg-white rounded-lg shadow dark:bg-gray-600 login-box "> */}
@@ -14,19 +14,22 @@ const SignUp = () => {
                         <span className="sr-only">Close modal</span>
                     </button> */}
                     <div className="px-6 py-6 lg:px-8">
-                        <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign Up</h3>
+                        <h3 className="mb-4 text-4xl font-medium text-gray-900 dark:text-white">Sign Up</h3>
                         <form className="space-y-6" action="#">
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ">Your email</label>
-                                <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
+                                {/* <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required /> */}
+                                <input type="email" name="email" id="email" className="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-black" placeholder="name@company.com" required />
                             </div>
                             <div>
                                 <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ">Your password</label>
-                                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                                {/* <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required /> */}
+                                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" required />
                             </div>
                             <div>
                                 <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ">Confirm password</label>
-                                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                                {/* <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required /> */}
+                                <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" required />
                             </div>
                             <div className="flex justify-between">
                                 <div className="flex items-start">
@@ -39,16 +42,16 @@ const SignUp = () => {
                             </div>
                             <a href="/login" type="submit" className="w-full text-white font-medium rounded-lg text-sm text-center  "> <span></span><span></span><span></span><span></span>   Create account</a>
                             <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                                Already registered? <button className="text-blue-700 hover:underline dark:text-blue-500" onClick={() => {window.location.replace('/sign-in');}}>Sign In</button>
+                                Already registered? <button className="text-blue-700 hover:underline dark:text-blue-500" onClick={() => { window.location.replace('/sign-in'); }}>Sign In</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
-    // </div>
-  )
+        // </div>
+    )
 }
 
 export default SignUp
