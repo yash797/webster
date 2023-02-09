@@ -1,7 +1,8 @@
 import './App.css';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-
+import Navbar from "./navbar"
+import Footer from "./components/preloader/footer"
 import Login from './pages/login'
 import Demo from "./pages/demo";
 import MyModal from './pages/MyModal';
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       {/* <Login /> */}
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
@@ -28,6 +30,7 @@ function App() {
 
         {/* </Route> */}
       </Routes>
+      {/* <Footer/> */}
     </>
   );
 }
