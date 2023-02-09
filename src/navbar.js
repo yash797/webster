@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between flex-wrap bg-red-600 bg-opacity-20 p-2">
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          \
+{/*           
           <a
             href="#search"
             className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
@@ -21,7 +21,7 @@ const Navbar = () => {
             >
               <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
             </svg>
-          </a>
+          </a> */}
           {/* <a
             href="#sherlock"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 font-fancy"
