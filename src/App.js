@@ -1,9 +1,11 @@
 import './App.css';
-import { Route, BrowserRouter, Routes} from "react-router-dom";
-import Home from "./home";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
-import Login from './login'
-import Demo from "./demo";
+import Login from './pages/login'
+import Demo from "./pages/demo";
+import MyModal from './pages/MyModal';
+import Preloader from './components/preloader/Preloader';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
 
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/apply" element={<MyModal />} />
+        {/* <Route path="/Preloader" element={<Preloader />} /> */}
 
         {/* </Route> */}
       </Routes>

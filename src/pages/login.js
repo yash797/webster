@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { WithContext as ReactTags } from "react-tag-input";
+import Preloader from "../components/preloader/Preloader";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -12,8 +13,17 @@ const LoginPage = () => {
     whyHire: "",
     profilePic: null,
   });
+  const [isLoading, setIsLoading] = useState(true);
+
 
   const [tags, setTags] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, [])
+
 
   const handleInputChange = (e) => {
     setFormData({
@@ -33,6 +43,11 @@ const LoginPage = () => {
       skills: newTags.map((tag) => tag.text),
     });
   };
+
+  if (isLoading) {
+    return <Preloader />
+  }
+
   return (
     <div className="bg-[#340404] min-h-screen p-10 px-64">
       <h1 className="text-white text-3xl font-medium mb-6">Mystery Login</h1>
@@ -79,6 +94,7 @@ const LoginPage = () => {
             type="file"
             id="profilePic"
             name="profilePic"
+            accept="image/png, image/gif, image/jpeg, image/jpg"
             onChange={handleProfilePicChange}
           />
         </div>

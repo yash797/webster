@@ -7,8 +7,8 @@ function background() {
       
       <div className="hero1">
         <div className="xyz">
-          <div class="drop"></div>
-          <div class="wave"></div>
+          <div className="drop"></div>
+          <div className="wave"></div>
         </div>
       </div>
     </div>

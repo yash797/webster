@@ -8,8 +8,8 @@ function Hero() {
     <div className="main">
         {/* <div className="hero1">
         <div className="xyz">
-          <div class="drop"></div>
-          <div class="wave"></div>
+          <div className="drop"></div>
+          <div className="wave"></div>
         </div>
         </div> */}
       <div className="hero_logo relative">
@@ -36,7 +36,7 @@ function Hero() {
       {/* </div> */}
       <div className="register">
         <button className="btn rounded">
-          <a href="/login">
+          <a href="/apply">
             <span className="btn-span">Click to Apply</span>
           </a>
         </button>
