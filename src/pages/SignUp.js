@@ -40,7 +40,7 @@ const SignUp = () => {
                                 </div>
                                 <button href="/forgot-password" className="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</button>
                             </div>
-                            <a href="/login" type="submit" className="w-full text-white font-medium rounded-lg text-sm text-center  "> <span></span><span></span><span></span><span></span>   Create account</a>
+                            <a href="/apply" type="submit" className="w-full text-white font-medium rounded-lg text-sm text-center  "> <span></span><span></span><span></span><span></span>   Create account</a>
                             <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                                 Already registered? <button className="text-blue-700 hover:underline dark:text-blue-500" onClick={() => { window.location.replace('/sign-in'); }}>Sign In</button>
                             </div>
