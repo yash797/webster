@@ -8,7 +8,7 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(103, 30, 7);
+    background-color: #340404;
 }
 
 ::-webkit-scrollbar-track {
