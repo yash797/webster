@@ -3,36 +3,34 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const Price = () => {
-    const [errorMessage, setErrorMessage] = useState(null);
-    const[total,setTotal]= useState(0);
-    const [price, setPrice] = useState([]);
-    // var price1 = 0;
-    useEffect(() => {
-        let temp=[]
-      for(let i=0;i<details.length;i++){
-        temp.push(0)
-      }
-      setPrice(temp);
-    }, []);
-    
-    const calculatePoints = (temp) => {
-      let sum=0;
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [total, setTotal] = useState(0);
+  const [price, setPrice] = useState([]);
+  // var price1 = 0;
+  useEffect(() => {
+    let temp = [];
+    for (let i = 0; i < details.length; i++) {
+      temp.push(0);
+    }
+    setPrice(temp);
+  }, []);
 
-      temp.map((member, i) => {
-        sum += parseInt(member);
-        console.log("Line 19 "+member)
-      });
-        setTotal(sum);
+  const calculatePoints = (temp) => {
+    let sum = 0;
 
-      
-    };
+    temp.map((member, i) => {
+      sum += parseInt(member);
+      console.log("Line 19 " + member);
+    });
+    setTotal(sum);
+  };
 
-    // var temp=0, prev=0;
-    // var marathon= new Array();
-    // for(let i=0; i<details.length();i++){
-    //     marathon[i]=0;
-    // }
-    // var marathon=[0,0,0]
+  // var temp=0, prev=0;
+  // var marathon= new Array();
+  // for(let i=0; i<details.length();i++){
+  //     marathon[i]=0;
+  // }
+  // var marathon=[0,0,0]
   const details = [
     {
       name: "Marathon 1",
@@ -50,7 +48,7 @@ const Price = () => {
       price: 700,
     },
   ];
-  
+
   return (
     <div className="">
       <h1 className="sticky201 text-cyan-500 text-3xl   text-center mt-8 font-mono z-50">
@@ -82,7 +80,9 @@ const Price = () => {
                     {member.name}
                   </p>
                   {/* <p className="card-post mt-2">{member.role}</p> */}
-                  <p className="text-bold text-xl text-center text-cyan-600">Enter number of tickets of ₹{member.price}</p>
+                  <p className="text-bold text-xl text-center text-cyan-600">
+                    Enter number of tickets of ₹{member.price}
+                  </p>
                   <input
                     type="number"
                     required

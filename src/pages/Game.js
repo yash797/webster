@@ -48,17 +48,17 @@ const Game = () => {
 
         <div className="hero container min-w-screen mx-auto flex justify-center">
 
-            <button class="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
+            <button className="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
                 I. Pregnant Lady
             </button>
-            <button class="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
+            <button className="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
                 II. Small Kid
             </button>
             <br />
-            <button class="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
+            <button className="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
                 III. Kid's Mother
             </button>
-            <button class="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
+            <button className="bg-transparent hover:bg-red-500 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/4 text-red-700 font-semibold hover:text-white py-2 px-4 mx-2 my-2 border border-red-500 hover:border-transparent rounded ">
                 IV. Standby man
             </button>
 

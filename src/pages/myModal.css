@@ -1,11 +1,16 @@
 /* css for game over starts here */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 .App {
   text-align: center;
   height: 100%;
+  /* animation: 2s evil alternate infinite; */
 }
 body {
   background-color: black;
+  font-family: 'Metal Mania', cursive;
+  /* font-family: 'Rubik Wet Paint', cursive; */
   /* overflow: hidden; */
 }
 .lost {

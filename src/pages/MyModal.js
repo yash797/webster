@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Preloader from '../components/preloader/Preloader';
 require("./myModal.css");
 let CRIMINAL_RIDDLES_1 = require('../static/images/CRIMINAL-RIDDLES-1.jpg');
 let CRIMINAL_RIDDLES_2 = require('../static/images/CRIMINAL-RIDDLES-2.jpg');
@@ -9,6 +10,8 @@ const MyModal = () => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [attemptsLeft, setAttemptsLeft] = useState(3);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
 
   let hasAlreadyAnswered = localStorage.getItem('hasAlreadyAnswered');
 
@@ -26,19 +29,36 @@ const MyModal = () => {
     {
       image: CRIMINAL_RIDDLES_1,
       question: 'Qn statement 1',
-      answer: '11'
+      answer: '11',
+      quote: 'There is nothing more deceptive than an obvious fact.'
     },
     {
       image: CRIMINAL_RIDDLES_2,
       question: 'Qn statement 2',
-      answer: '22'
+      answer: '22',
+      quote: 'Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell'
     },
     {
-      image: '../static/images/CRIMINAL-RIDDLES-3.jpg',
-      question: 'Qn statement 3',
-      answer: '33'
-    }
+      image: '',
+      question: 'On a cold winter day, there was a man standing in front of someone’s house. He didn’t move until the spring, and the owner didn’t mind. Eventually, the man left. Who was he?',
+      answer: 'snowman',
+      quote: 'To a great mind, nothing is little'
+    },
+    {
+      image: '',
+      question: 'Every day, a woman was seen crossing the border carrying bags of sand on a motorbike. After some time, the border police become suspicious and stop her, but found she only had sand on her, so they let her go. What was the woman smuggling across the border?',
+      answer: 'Motorbikes',
+      quote: 'Crime is common. Logic is rare'
+    },
   ];
+
+  // My name is Sherlock Holmes. It is my business to know what other people do not know
+  // I abhor the dull routine of existence. I crave for mental exaltation. That is why I have chosen my own particular profession, or rather created it, for I am the only one in the world.
+  // A good detective knows that every task, every interaction, no matter how seemingly banal, has the potential to contain multitudes
+  // When you have eliminated the impossible, whatever remains, however improbable, must be the truth?
+  // is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts
+  // You see, but you do not observe.
+
 
 
   const handlePreviousQuestion = (e) => {
@@ -55,6 +75,16 @@ const MyModal = () => {
     }
   };
 
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, [])
+
+  if (isLoading) {
+    return <Preloader />
+  }
 
 
   const submitAns = (e) => {
@@ -140,7 +170,7 @@ const MyModal = () => {
     localStorage.setItem('hasAlreadyAnswered', true);
     return (
       <div className="flex items-center justify-center bg-[#340404] min-w-screen min-h-screen p-10 bg-black-500 text-white text-center overflow-hidden">
-        <div className="App">
+        <div className="App canvas">
           <h3 className="lost">GAME OVER</h3>
           <div className="container">
             <h4 className="note">Can't Apply! </h4>
@@ -164,8 +194,8 @@ const MyModal = () => {
 
   if (showSuccess) {
     setTimeout(function() {
-      window.location.replace('/thank-you');
-    }, 5000);
+      window.location.replace('/login');
+    }, 3000);
     
     return (
       <div className=" flex items-center bg-black-500 min-w-screen min-h-screen text-white text-center justify-center align-items-center">
@@ -189,8 +219,8 @@ const MyModal = () => {
     // <div className='min-h-screen bg-[#340404] justify-center align-items-center' >
       <div className="flex items-center justify-center min-h-screen p-5 bg-[#340404] min-w-screen">
 
-        <div className={`relative top-1/2 left-7 overflow-auto disabled:opacity-75`}>
-          <button className={`rounded-full  px-4 py-4 bg-white disabled:bg-gray-500 disabled:opacity-100`} disabled={questionIndex == 0} onClick={handlePreviousQuestion}> 
+        <div className={`relative top-1/2 left-7 disabled:opacity-75`}>
+          <button className={`rounded-full px-4 py-4 bg-white disabled:bg-gray-500 disabled:opacity-100`} disabled={questionIndex == 0} onClick={handlePreviousQuestion}> 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
             </svg>
@@ -199,7 +229,7 @@ const MyModal = () => {
 
 
         <div className="max-w-xl p-8 text-center text-gray-800 bg-[#ffcfcf] shadow-xl lg:max-w-3xl rounded-3xl lg:p-12 overflow-auto">
-          <h3 className="text-4xl mb-4">Solve the riddle!</h3>
+          <h3 className="text-4xl text-red-600 mb-4 ">Solve the Riddle To Be Able to Apply!</h3>
           {/* <div className="flex justify-center">
                     <svg className="w-32 h-32" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -220,7 +250,7 @@ const MyModal = () => {
                         </defs>
                     </svg>
                 </div> */}
-          <img src={questions[questionIndex].image} alt="img" />
+          {questions[questionIndex].image.length > 0 ? <img src={questions[questionIndex].image} alt="img" /> : <></> }
           <p className="text-2xl my-4">Who'se the culprit ?</p>
           <p className="text-2xl my-4">{questions[questionIndex].question}</p>
           <div className="md:flex md:items-center mb-6">
@@ -234,7 +264,11 @@ const MyModal = () => {
             </div>
           </div>
           <div className="mt-4">
-            <button disabled={hasAlreadyAnswered != null || hasAlreadyAnswered == true || attemptsLeft <= 0} className="mb-4 px-2 py-2 text-white-200 bg-red-600 rounded" onClick={submitAns}>Submit Answer</button>
+            <button 
+            disabled={hasAlreadyAnswered != null || hasAlreadyAnswered == true || attemptsLeft <= 0} 
+            className="mb-4 px-4 py-3 text-white-200 bg-[#FF0000] hover:bg-[#ff0000ad] rounded" 
+            onClick={submitAns}>
+              Submit Answer</button>
             {/* 
               <p className="mt-4 text-sm">If you’re having trouble clicking the "Verify Email Address" button, copy
                 and
@@ -244,7 +278,8 @@ const MyModal = () => {
                 <a href="" className="text-blue-600">http://localhost:8000/email/verify/3/1ab7a09a3</a>
               </p> 
             */}
-            <p className="text-lg">“There is nothing more deceptive than an obvious fact.” - (Det.) Sherlock Holmes</p>
+            {/* <p className="text-md">“  ” - (Det.) Sherlock Holmes</p> */}
+            <p className="text-md"> <q>{questions[questionIndex].quote}</q> - <cite className="text-red-500">(Det.) Sherlock Holmes</cite></p>
           </div>
         </div>
 
