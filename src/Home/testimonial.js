@@ -71,7 +71,7 @@ const testimonials = (props) => {
     <>
       <div className="container23">
         <div className="testim">
-          <h1 className="testim-head mt-16">Testimonials</h1>
+          <h1 className="testim-head mt-36">Testimonials</h1>
         </div>
 
         <Swiper
@@ -131,7 +131,7 @@ const testimonials = (props) => {
         >
           {info.map((member, i) => (
             <SwiperSlide key={`member${i}`}>
-              <div className="h-auto w-[400px] rounded-lg bg-blue-900 bg-opacity-20 shadow-lg px-5 mt-36 mx-auto pb-10 transition ease-in-out hover:scale-105 transform -translate-y-2">
+              <div className="h-auto w-[400px] rounded-lg bg-[#f9997620] bg-opacity-20 shadow-lg px-5 mt-36 mx-auto pb-10 transition ease-in-out hover:scale-105 transform -translate-y-2">
                 <div className="w-full pt-1 mt-36 ">
                   <div className="overflow-hidden rounded-full border-4 border-full transition duration-300 ease-in-out transform hover:scale-110 border-cyan-600 w-24 h-24 -mt-16 mx-auto shadow-lg">
                     {/* <a href={linkedin ? linkedin : null} target="_blank" rel="noreferrer"> */}
@@ -140,10 +140,10 @@ const testimonials = (props) => {
                   </div>
                 </div>
                 <div className="mt-4 ">
-                  <p className="text-xl font-primary text-blue-500 font-bold text-center">
+                  <p className="text-xl font-primary text-orange-400 font-bold text-center">
                     {member.name}
                   </p>
-                  <p className="text-md font-secondary text-gray-300 text-center mt-2 mb-1">
+                  <p className="text-md font-secondary text-gray-200 text-center mt-2 mb-1">
                     {member.position}
                   </p>
                   {/* <img

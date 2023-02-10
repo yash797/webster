@@ -31,11 +31,13 @@
     align-items: center;
     width: 100%;
     height: 0;
-    border: 5px solid rgb(7, 138, 237);
+    /* border: 5px solid rgb(7, 138, 237); */
+    border: 5px solid rgb(226, 161, 55);
     border-top: 20px solid transparent;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    filter: drop-shadow(0 -8px 20px rgb(114, 217, 240));
+    /* filter: drop-shadow(0 -8px 20px rgb(114, 217, 240)); */
+    filter: drop-shadow(0 -8px 20px rgb(241, 205, 96));
 }
 
 .testim {
@@ -50,7 +52,9 @@
 
 .testim h1 {
     font-size: 4em;
-    color: #0ec1f2;
+    /* color: #0ec1f2;
+     */
+    color: #f2620e;
     font-weight: 600;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     /* -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell,*/
@@ -59,5 +63,6 @@
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 20px; */
-    text-shadow: 0 1px 3px rgb(3, 114, 249);
+    /* text-shadow: 0 1px 3px rgb(3, 114, 249); */
+        text-shadow: 2px 2px 8px #c37004;
 }

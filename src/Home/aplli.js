@@ -63,11 +63,11 @@ function whyPCSBnew() {
           {arr.map((member, i) => (
             <div
               key={`member${i}`}
-              className="bg-[#04031092] text-cyan-400 w-full max-w-md flex flex-col rounded-lg  shadow-lg p-4 hover:bg-opacity-75 hover:bg-[#0e0b3792] "
+              className="bg-[#04031092] text-orange-400 w-full max-w-md flex flex-col rounded-lg  shadow-lg p-4 hover:bg-opacity-25 hover:bg-[#f9997620] "
             >
               {/* <div class="flex items-center justify-between"> */}
               <div className="flex items-center space-x-4">
-                <div className="rounded-full w-4 h-4 border border-cyan-500"></div>
+                <div className="rounded-full w-4 h-4 border border-orange-500"></div>
                 <div className="text-2xl font-semibold text-left">
                   {member.title}
                 </div>

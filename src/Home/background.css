@@ -1,12 +1,13 @@
 .hero1{
     top: 0;
-    background-image: url(img0.png), url(imgl.jpg) !important;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img0.png), url(imgl.jpg) !important;
     /* background-image: url(img0.png) !important; */
-    background-size: 50%, cover;
-    background-position: left bottom, center;
+    background-size: 100%,50%, cover;
+    background-position: center,left bottom, center;
     background-repeat: no-repeat, no-repeat;
     filter: blur(4px), blur(3px);
-    filter: blur(4px);
+    /* filter: blur(4px); */
+    filter: grayscale(50%);
   -webkit-filter: blur(4px);
     z-index: -1;
     opacity: 0.5, 1;
