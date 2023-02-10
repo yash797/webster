@@ -6,19 +6,19 @@ import "./background.css";
 function Hero() {
   return (
     <div className="main">
-      <div class="sp-container">
-        <div class="sp-content">
-          <div class="sp-globe"></div>
-          <h2 class="frame-1">Unlock the Truth </h2>
-          <h2 class="frame-2">with the Greatest Detective</h2>
-          <h2 class="frame-3">Join the Hunt</h2>
-          <h2 class="frame-4">for Justice!</h2>
-          <h2 class="frame-5">
+      <div className="sp-container">
+        <div className="sp-content">
+          <div className="sp-globe"></div>
+          <h2 className="frame-1">Unlock the Truth </h2>
+          <h2 className="frame-2">with the Greatest Detective</h2>
+          <h2 className="frame-3">Join the Hunt</h2>
+          <h2 className="frame-4">for Justice!</h2>
+          <h2 className="frame-5">
             <span>The Mystery Match</span>
             {/* <span>Mystery</span>
             <span>Match</span> */}
           </h2>
-          {/* <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">
+          {/* <a className="sp-circle-link" href="https://nick.mkrtchyan.ga">
             by Nick
           </a> */}
         </div>
