@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Preloader from '../components/preloader/Preloader';
-import Background from '../Home/background'
-import Hero from '../Home/hero'
-import Apli from "../Home/aplli";
-import Testi from "../Home/testimonial";
+import Background from './Home/background'
+import Hero from './Home/hero'
+import Apli from "./Home/aplli";
+import Testi from "./Home/testimonial";
 import Footer from "../components/preloader/footer";
 
-import Req from "../Home/requirements";
+import Req from "./Home/requirements";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);

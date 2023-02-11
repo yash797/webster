@@ -1,5 +1,5 @@
 import React from 'react';
-const watson_img = require("../static/images/wats.jpg");
+const watson_img = require("../static/images/wats.png");
 import("./Profile.css");
 
 const Profile = () => {
