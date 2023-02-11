@@ -38,28 +38,28 @@ function footer() {
               </div>
               <div className="w-full space-y-4">
                 <div className="font-bold pb-2 border-b border-gray-400 text-cyan-400">
-                  Events
+                  Sponsored By
                 </div>
                 <div className="space-y-2">
                   <div className=" font-medium">
                     <a
-                      href="https://www.pcsbxenia.com/"
+                      // href="https://www.pcsbxenia.com/"
                       rel="noreferrer noopener"
                       target="_blank"
                       className="hover:text-cyan-200"
                     >
-                      XENIA
+                      Detective's Eye Technologies
                     </a>
                     {/* <Link to="https://www.pcsbxenia.com/">XENIA</Link> */}
                   </div>
                   <div className=" font-medium">
                     <a
-                      href="https://www.xeniaverse.co.in/"
+                      // href="https://www.xeniaverse.co.in/"
                       rel="noreferrer noopener"
                       target="_blank"
                       className="hover:text-cyan-200"
                     >
-                      XENIAVERSE
+                      The Case Solvers LLC
                     </a>
                     {/* <Link to="https://www.xeniaverse.co.in/">XENIAVERSE</Link> */}
                   </div>
@@ -108,13 +108,13 @@ function footer() {
               </div>
             </div>
             <p className="inline mt-8">
-              &copy; {new Date().getFullYear()} PICT CSI Student Branch.
-              Designed & Developed with ♥ by{" "}
+              &copy; {new Date().getFullYear()} Mystery Match Designed &
+              Developed with 🔍 by{" "}
               <Link
                 to="/web-team"
                 className="text-violet-400 hover:text-md hover:text-cyan-400"
               >
-                PCSB Web Team
+                The Bounty Hunters
               </Link>
             </p>
           </div>

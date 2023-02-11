@@ -13,57 +13,57 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const testimonials = (props) => {
   const info = [
     {
-      name: "Vedant Daigavne",
-      position: "Engineering at Upstox",
-      img: "https://media.licdn.com/dms/image/D4D03AQH7twfuLl2iKg/profile-displayphoto-shrink_400_400/0/1668706658393?e=1676505600&v=beta&t=u3p-hEePsrTZkMvFfBMdqt_XGSdtzGwjRRup2RzPQd0",
-      company:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      name: "Dr. John Watson",
+      position: "Detective Assistant",
+      img: "https://44.media.tumblr.com/30a0cf100a3566b8ccd6724d4abb5527/tumblr_olwxvooqUu1tc7805o1_500.gif",
+      // company:
+      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       testimonials:
-        "PCSB gave me a platform to explore different domains and contribute to building other websites. I enjoyed my time in PCSB, whether it was to manage an event or guide juniors in developing their skillsets.",
+        "Working with Sherlock was a wild ride, to say the least. He's got a wicked sense of humor, and he's always up for a good laugh, even in the middle of a high-stakes investigation",
     },
     {
-      name: "Amit Purohit",
-      position: "Upcoming Analyst at Deutsche Bank",
-      img: "https://drive.google.com/uc?export=view&id=1uYiOPXS_bOQDcHHwZf6EwCqOO07p3L_o",
-      company:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      name: "Eileen Prince",
+      position: "Forensic Specialist",
+      img: "https://i.guim.co.uk/img/media/d56cf414fd7f4681a7fc2b54c367ef6f4364a4c2/0_288_3567_3564/master/3567.jpg?width=700&quality=85&auto=format&fit=max&s=75a1fa9b32ef1c8c5e324578b45e6d48",
+      // company:
+      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       testimonials:
-        "I joined PCSB in my second year, along with my friends, to explore the club. Our then heads chose me as a developer for building the PCSB website. So the journey started there, and the club became like a family as time passed. Building projects for the club and guiding juniors taught me a lot. I hope this legacy continues.",
+        "I never knew detective work could be so much fun! Sherlock has a unique perspective on the world that makes even the most mundane clues seem like a treasure trove of laughs.",
     },
     {
-      name: "Sunand Goel",
-      position: "Upcoming Analyst at Barclays",
-      img: "https://drive.google.com/uc?export=view&id=1Y5O8JStaM5gqIQyjI1zl9bOdWwoDN5Tc",
+      name: "Mary Morstan",
+      position: "Intelligence Analyst",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1YsjGS8uwnJLObbA3RsT3rtYxojABIzMDhUDPz-wIruPHVkwreclYRba0f5K7w-zjIU&usqp=CAU",
       // company: "https://logo-sign.com/logos/Deutsche-bank-logo.png",
       testimonials:
-        "PCSB gave me the opportunity to work on live projects that eventually helped me score internship. It was PCSB through which I got a chance to strengthen my network, it gave me a chance to interact personally with  Founders, Directors, VPs, Content Creator and alumni working in various tech fields.",
+        "I always thought detectives were supposed to be serious and stoic, but Sherlock shattered that stereotype for me. He's got a wicked sense of humor and a mischievous streak that keeps things interesting, to say the least",
     },
     {
-      name: "Yash Rajput",
-      position: "Upcoming Software Developer at media.net",
-      img: "https://pps.whatsapp.net/v/t61.24694-24/267396679_118027147799061_5796901660932740601_n.jpg?ccb=11-4&oh=01_AdTPCjmBwHU0gxh8qQR7Z1iutnlL77-jfMWClw8DRyYdIg&oe=63A85ABA",
-      company:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      name: "Molly Hooper",
+      position: "Technical Specialist",
+      img: "https://sherlockholmestv.files.wordpress.com/2016/03/a13053560a636bee20be251c10f3e1d1.jpg",
+      // company:
+      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       testimonials:
-        "PCSB is a platform where you can talk and discuss almost anything with your seniors without hesitation. It also provides an environment where you can learn more about industry-level things, and the bond with seniors is so strong that they support you at every point. I joined PCSB as a member of the cp team and met such outstanding seniors who helped me grow from a plant to a tree.",
+        "Sherlock is the only detective I know who can make a criminal confession into a stand-up comedy routine. He's got a quick wit and a natural talent for entertaining, and I wouldn't be surprised if he eventually makes the leap to full-time comedy",
     },
     {
-      name: "Sania Edlabadkar",
-      position: "Upcoming Analyst at Goldman Sachs",
-      img: "https://media.licdn.com/dms/image/D5635AQGFOgTLaOaViA/profile-framedphoto-shrink_100_100/0/1659371876130?e=1671721200&v=beta&t=kFlRezkGEuQjJVT7mXkGg7teH0XMj6nb4hjgXlp5RWQ",
-      company:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      name: "Greg Lestrade",
+      position: "Research Assistant",
+      img: "https://pbs.twimg.com/profile_images/477365311809658880/3BBXuib5_400x400.png",
+      // company:
+      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       testimonials:
-        "Being in PCSB has helped me grow personally as well as professionally. PCSB has made me resourceful.  It has instilled in me entrepreneurial and leadership qualities. All the experience gained in hosting events and seeing them through till the end has also helped me in my placement interviews.",
+        "Sherlock is like the cool uncle you always wanted, but instead of taking you to amusement parks, he takes you to crime scenes. And instead of cotton candy, he hands out obscure references and witty one-liners. I never knew detective work could be this much fun!",
     },
     {
-      name: "Shantanu Jain",
-      position: "Upcoming Software Developer at Rythmflows",
-      img: "https://media.licdn.com/dms/image/C5603AQFNb7cWJ8Z1lw/profile-displayphoto-shrink_800_800/0/1630987834109?e=1676505600&v=beta&t=RQM4BdI2I_daCXyRScmZUxYoKSy8-a8fOObe7wRxgzo",
-      company:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      name: "Sally Donovan",
+      position: "Field Agent",
+      img: "https://64.media.tumblr.com/c4a4771eaf8f8a527b7ee4fd41c43b8b/tumblr_inline_p7pkj1X4DZ1qiv5yk_500.jpg",
+      // company:
+      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
       testimonials:
-        "Being in PCSB helped me to manage time and prioritize things and improve team management and people handling skills by being guided by seniors and then guiding the juniors. All the technical experience gained helped me in my internship also.",
+        "I never knew a detective could be so eccentric. But then again, I never worked with someone who spends more time talking to his imaginary deerstalker hat than he does to actual people. But hey, if it works for him, it works for me!",
     },
   ];
 
