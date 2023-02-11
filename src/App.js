@@ -10,6 +10,7 @@ import Preloader from './components/preloader/Preloader';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Profile from './pages/Profile';
+import Sherlock_Dashboard from './pages/Shelock_Logged_In/Sherlock_Dashboard';
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/apply" element={<MyModal />} />
         <Route path="/profile" element={<Profile />} />
+
+        <Route path="/sherlock" element={<Sherlock_Dashboard />} />
+
 
         {/* </Route> */}
       </Routes>

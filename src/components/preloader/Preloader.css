@@ -1,9 +1,9 @@
-body {
+/* body { */
   /* .loader { */
-    background: #262E2A;
-    /* background: #340404; */  
+    /* background: #262E2A; */
+    /* background: #340404;   */
     /* overflow: hidden; */
-  }
+  /* } */
   
   .loader {
     animation: spin 1.5s linear alternate infinite;
