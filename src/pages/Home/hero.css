@@ -17,7 +17,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 175px;
     text-shadow: 2px 2px 8px #000000;
-    color: rgb(240, 136, 9);
+    color: rgb(240, 24, 9);
 }
 
 
@@ -252,7 +252,8 @@ p.demos {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-top: 175px;
         /* text-shadow: 2px 2px 8px #000000; */
-        color: rgb(240, 136, 9);
+        /* color: rgb(240, 9, 9); */
+    color: #f2620e;
     /* top: 50%; */
     line-height: 100px;
     /* height: 90px; */
@@ -305,7 +306,7 @@ p.demos {
     font-size: 80px;
         font-weight: 700;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-shadow: 2px 2px 8px #000000;
+        text-shadow: 2px 2px 8px #220101;
     -webkit-animation: none;
     -moz-animation: none;
     -ms-animation: none;

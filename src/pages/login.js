@@ -50,7 +50,7 @@ const LoginPage = () => {
 
   return (
     <div className="bg-[#340404] min-h-screen p-10 px-64">
-      <h1 className="text-white text-3xl font-medium mb-6">Mystery Login</h1>
+      <h1 className="text-white text-3xl font-medium mb-6">Mystery Submit</h1>
       <form className="bg-white bg-opacity-20 p-6 rounded-lg shadow-md text-black">
         <div className="flex mb-4">
           <div className="w-full mr-2 md:w-1/2">
@@ -112,7 +112,7 @@ const LoginPage = () => {
             />
           </div>
         </div>
-        <div className="">
+        {/* <div className="">
           <label
             className="block text-white font-medium mb-2"
             htmlFor="profilePic"
@@ -127,6 +127,34 @@ const LoginPage = () => {
             accept="image/png, image/gif, image/jpeg, image/jpg"
             onChange={handleProfilePicChange}
           />
+        </div> */}
+        <div className="flex mb-4">
+          <div className="w-full mr-2 md:w-1/2">
+            <label className="block text-white font-medium mb-2" htmlFor="name">
+              Upload your Profile Picture:
+            </label>
+              <input
+            className="border border-gray-400 bg-gray-300 p-2 w-full text-black text-md font-semibold"
+            type="file"
+            id="profilePic"
+            name="profilePic"
+            accept="image/png, image/gif, image/jpeg, image/jpg"
+            onChange={handleProfilePicChange}
+          />
+          </div>
+          <div className="md:w-1/2 ml-2 w-full">
+            <label className="block text-white font-medium mb-2" htmlFor="age">
+              Upload your Resume/CV:
+            </label>
+            <input
+            className="border border-gray-400 bg-gray-300 p-2 w-full text-black text-md font-semibold"
+            type="file"
+            id="profilePic"
+            name="profilePic"
+            accept="image/png, image/gif, image/jpeg, image/jpg"
+            onChange={handleProfilePicChange}
+          />
+          </div>
         </div>
         <div className="mb-4">
           <label
