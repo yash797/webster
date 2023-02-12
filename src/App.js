@@ -16,7 +16,6 @@ import Sherlock_Dashboard from './pages/Shelock_Logged_In/Sherlock_Dashboard';
 function App() {
   return (
     <>
-      {/* <Login /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,9 +30,7 @@ function App() {
         <Route path="/sherlock" element={<Sherlock_Dashboard />} />
 
 
-        {/* </Route> */}
       </Routes>
-      {/* <Footer/> */}
     </>
   );
 }
